@@ -1,2 +1,4 @@
 # Windows-DIAL-Discovery-and-Launch-Server
-Y is this in desktop builds tho?
+Looks like the `Discovery and Launch` server meant for the Xbox One was included with Windows 10. Modify the paths and signature to get a server running. Better documentation and cleaner code is on the todo list. I believe the http server starts on port `10247` but I could be wrong. This code as-is only works with a very specific version of `dialserver.dll`. You should be able to derive that version from the in-code file paths.
+
+To test this server on `Xbox One`, keeping in mind that this repository starts a server on a local Windows 10 based PC, make a `POST` to `XboxIP:10247/apps/YouTube` Where `YouTube` is an app that has been previously installed. Pending a few other things, it should function similarly on PC.
